@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            canvas{
+                margin: auto;
+
+                border: 6px;
+                border-style: dotted;
+                border-color: blue;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to Canvas</h1>
+        <canvas id="id1" height="400px" width="400px">
+            Canvas not supported
+        </canvas>
+        <script>
+            var a = document.getElementById("id1");
+            var ctx = a.getContext("2d");
+            ctx.fillRect(10, 40, 200,100); // Parenthesis meaning x, y is the top left position from where to draw
+                                            // The is the width and height of rectangle
+
+        </script>
+    </body>
+</html>
