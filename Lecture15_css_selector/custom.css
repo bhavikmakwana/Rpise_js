@@ -1,0 +1,74 @@
+/*
+CSS Selector base,
+Parent Node,
+Child Node,
+Leaf Node,
+Sibligs Node
+
+*/
+/* 
+    Created on : Mar 24, 2015, 8:18:36 AM
+    Author     : Mehul
+*/
+
+
+h1,div
+{
+    background-color: #f4f4f4;
+   padding: 20px;
+    margin: 10px 10px auto;
+    border-radius:15px;
+    border-style: solid;
+}
+h1{
+    background-color: #ccc; 
+}
+.b{
+    height: 250px;
+    width: 450px;
+    float: left;
+    
+}
+.c{
+     height: 250px;
+    width: 450px;
+    float: right;
+}
+.a{
+    background-color: lightblue;
+}
+
+.main-footer{
+ 
+   
+    
+}
+p.pa{
+    color: brown;
+    font-weight: bold;
+}
+
+[dalpat=hey]{
+    font-weight: bold;
+}
+.d,.e,.f,.g{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
+/*
+p tag inside a div tag in class c.
+so style will apply only in p tag of class c
+*/
+/*div .c p{
+    background: greenyellow;
+}*/
+
+/*
+Siblings Relaion
+*/
+h1+p{
+    background: aqua;
+}
+

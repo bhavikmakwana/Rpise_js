@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>AJAX</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="main">
+            ----- message will come here---
+
+            <h2>Welcome to Into Of AJAX</h2>
+        </div>
+        <script>
+            //create request
+            function ajaxCall(url) {
+                var request = new XMLHttpRequest();
+                //open connection with server(typeOfRequest,destination,true or false|| whether sync or async)
+
+                request.onreadystatechange = function() {
+                    //console.log("Hello world");
+                    if (request.readyState == 4) {
+                        var div = document.getElementById("main");
+                        div.innerHTML = request.responseText;
+                    }
+                };
+                //request.open("GET","http://localhost:8383/into_ajax/1.html",true);
+                request.open("GET", url, true);
+                request.send();
+            }
+        </script>
+        <!--a href="1.html">One</a>
+        <a href="2.html">Two</a>
+        <a href="3.html">Three</a-->
+
+    </body>
+</html>

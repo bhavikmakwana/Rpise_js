@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Canvas Path</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            canvas{
+                margin: auto;
+                border: 6px;
+                border-style: dotted;
+                border-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="c1" height="400" width="200"></canvas>
+        <script>
+            var b = document.getElementById("c1");
+            var ctx = b.getContext("2d");
+//            ctx.fillRect(20, 10, 200, 100);
+            ctx.beginPath();
+            ctx.moveTo(100, 100);
+            ctx.lineTo(100, 200);
+            ctx.lineTo(150, 150);
+            ctx.lineTo(100, 100);
+            ctx.moveTo(200, 200);
+            ctx.lineTo(100, 100);
+            ctx.lineTo(150, 150);
+            ctx.lineTo(100, 100);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.fill();
+        </script>
+    </body>
+</html>

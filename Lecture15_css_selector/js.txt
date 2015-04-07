@@ -1,0 +1,23 @@
+/*
+In Javascript console
+in browser conole to change the content of tag for e.g.=>p.
+*/
+
+
+var array=document.getElementsByTagName("p");
+
+array
+
+
+[<p class=?"pa">?This is paragraph tag in parent of B?</p>?, <p>?Child of B >d?</p>?, <p class=?"pa">?This is para tag in Parent of c?</p>?, <p>?Child of c >f?</p>?, 
+<p dalpat=?"hey">? This is Dalpat ?</p>?]
+
+
+var array=document.getElementsByTagName("p");for(var i=0;i <array.length;i++){array[i].innerHTML="Hello World"}
+2015-03-24 09:41:19.659"Hello World"
+
+
+/*
+
+$("p.g1").innerHTML="hello World";
+*/
